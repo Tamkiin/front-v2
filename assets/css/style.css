@@ -4560,3 +4560,11 @@ textarea.form-control {
 .heading-projects {
   text-align: center;
 }
+.service-title {
+  letter-spacing: 1px;
+}
+.service-para {
+  font-size: 1rem;
+  color: rgb(153, 142, 142);
+  line-height: 30px;
+}
