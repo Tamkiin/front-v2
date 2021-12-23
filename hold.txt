@@ -1,4 +1,4 @@
-contact us separate 
-projects separate 
-contact us three column "form | address | social-media"
-email services (gmail)
+nav to right side
+contact background and form in one container
+remove contact from nav
+fullpage.js
