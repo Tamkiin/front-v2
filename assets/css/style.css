@@ -4545,8 +4545,7 @@ textarea.form-control {
 .mylogo {
   max-width: 100%;
   max-height: 100%;
-  width: 80px;
-  height: 80px;
+  width: 90px;
 }
 
 .table-r {
@@ -4619,16 +4618,16 @@ section .section-title {
   transition: transform 0.2s ease-in-out;
 }
 #what-we-do .card .block-1:before {
-  content: "\f0e7";
+  content: "\f0d1";
 }
 #what-we-do .card .block-2:before {
-  content: "\f0eb";
+  content: "\f07c";
 }
 #what-we-do .card .block-3:before {
-  content: "\f00c";
+  content: "\f505";
 }
 #what-we-do .card .block-4:before {
-  content: "\f209";
+  content: "\f0eb";
 }
 #what-we-do .card .block-5:before {
   content: "\f0a1";
