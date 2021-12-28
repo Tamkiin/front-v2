@@ -43,34 +43,62 @@
       </div>
     </div>
 
-    <div class="container p-5">
+    <div class="container p-5 custom-container">
       <div class="col-lg-12 col-md-12 d-flex" style="flex-direction: row">
-        <style>
-          .ctn-btn {
-            padding: 18px 50px;
-            border-radius: 10px;
-          }
-          .ctn-btn:hover {
-            background-color: darkorange;
-            border-radius: 10px;
-            color: white;
-          }
-        </style>
-        <a
-          href="index.html"
-          class="default-btn ctn-btn"
-          style="margin-left: auto"
-        >
-          <span class="p-0"> Close </span>
-        </a>
+        <div class="back-bg">
+          <style>
+            .back-bg {
+              background-image: linear-gradient(
+                  to bottom,
+                  rgba(255, 255, 255, 0.9),
+                  rgba(255, 255, 255, 0.9)
+                ),
+                /* W3C */ url("./assets/images/bg.jpg");
+              background-position: center;
+              border-radius: 10px;
+            }
+            .ctn-btn:hover {
+              background-color: darkorange;
+              border-radius: 10px;
+              color: white;
+            }
+            .ctn-btn {
+              border-radius: 25px;
+              padding: 18px 40px;
+            }
+          </style>
+          <!-- <a
+            href="index.html"
+            class="default-btn ctn-btn"
+            style="margin-left: auto"
+          >
+            <span class="p-0"> Close </span>
+          </a> -->
+        </div>
       </div>
     </div>
     <style>
+      .custom-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #ddd; */
+        margin-bottom: 30px;
+      }
+      .contact-info-area {
+        /* background-color: rgb(245, 245, 245); */
+        background-color: #e5eafc !important;
+        /* width: 80%; */
+        border-radius: 20px;
+      }
       .main-header-contact {
         font-size: 45px;
         line-height: 44px;
         font-weight: 700;
         margin-bottom: 50px;
+      }
+      .main-header-contact span {
+        color: darkorange;
       }
 
       .mini-title {
@@ -81,19 +109,25 @@
       .my-input {
         border: none;
         outline: none;
-        border-bottom: 1px solid black;
-        margin-bottom: 20px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        border-radius: 10px;
       }
 
-      .my-input:focus {
-        border: none;
-        outline: none;
-      }
+      /* .my-input:focus {
+      } */
 
       .my-btn {
         margin-top: 25px;
+        border-radius: 25px;
+        padding: 18px 31px;
       }
 
+      .my-btn:hover {
+        background-color: darkorange;
+        border-radius: 10px;
+        color: white;
+      }
       .social-contact a {
         font-size: 20px;
         color: #ddd;
@@ -112,108 +146,127 @@
         color: grey;
       }
     </style>
-    <div class="contact-info-area pt-100 pb-70">
-      <div class="container">
-        <div class="row">
-          <h1 class="main-header-contact">
-            WE’RE HERE FOR YOU<br />
-            AND WE’RE READY TO<br />
-            WORK WITH YOU
-          </h1>
-          <div class="col-12 col-md-5 mb-5 mb-md-0">
-            <h3 class="mini-title">Let's discuss your needs!</h3>
-            <form id="contactForm">
-              <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      id="name"
-                      class="form-control my-input"
-                      required
-                      data-error="Please enter your name"
-                    />
-                    <div class="help-block with-errors"></div>
+    <div class="custom-bg">
+      <div class="contact-info-area pt-100 pb-70">
+        <div class="container">
+          <div class="row">
+            <a
+              href="index.html"
+              class="default-btn ctn-btn"
+              style="margin-left: auto; width: 100px; margin-right: 30px"
+            >
+              <span class="p-0"> Close </span>
+            </a>
+            <h1 class="main-header-contact">
+              WE’RE HERE FOR <span> YOU </span><br />
+              AND <span> WE’RE </span> READY TO<br />
+              WORK WITH YOU
+            </h1>
+            <div class="col-12 col-md-5 mb-5 mb-md-0">
+              <!-- <h3 class="mini-title">Let's discuss your needs!</h3> -->
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        id="name"
+                        class="form-control my-input"
+                        required
+                        data-error="Please enter your name"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-sm-12">
+                    <div class="form-group">
+                      <input
+                        placeholder="Email"
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control my-input"
+                        required
+                        data-error="Please enter your email"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-sm-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        placeholder="Phone"
+                        name="phone_number"
+                        id="phone_number my-input"
+                        required
+                        data-error="Please enter your number"
+                        class="form-control my-input"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        placeholder="Message"
+                        name="message"
+                        class="form-control my-input"
+                        id="message"
+                        cols="30"
+                        rows="8"
+                        required
+                        data-error="Write your message"
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <button type="submit" class="default-btn my-btn">
+                      <span>
+                        Send
+                        <i class="ri-arrow-right-circle-line"></i>
+                      </span>
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
                   </div>
                 </div>
-                <div class="col-lg-12 col-sm-12">
-                  <div class="form-group">
-                    <input
-                      placeholder="Email"
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control my-input"
-                      required
-                      data-error="Please enter your email"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-sm-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      placeholder="Phone"
-                      name="phone_number"
-                      id="phone_number my-input"
-                      required
-                      data-error="Please enter your number"
-                      class="form-control my-input"
-                    />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <textarea
-                      placeholder="Message"
-                      name="message"
-                      class="form-control my-input"
-                      id="message"
-                      cols="30"
-                      rows="8"
-                      required
-                      data-error="Write your message"
-                    ></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <button type="submit" class="default-btn my-btn">
-                    <span>
-                      Send
-                      <i class="ri-arrow-right-circle-line"></i>
-                    </span>
-                  </button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-12 col-md-3 offset-md-1 mb-5 mb-md-0 address-contact">
-            <h3 class="mini-title">General Inquiries</h3>
-            <br />
-            <span>MOB:0633749923</span>
-            <br />
-            <span>EMAIL:mo@gmail.com</span>
-            <br />
-            <br />
-            <h3 class="mini-title">Locations</h3>
-            5
-            <span>Ali-Gobinmo,1st-floor, hargeisa-somaliland</span>
-          </div>
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <h3 class="mini-title">follow</h3>
-            <div class="d-flex flex-column social-contact">
-              <a href="#" class="social-item">Twitter</a
-              ><a href="#" class="social-item">Facebook</a
-              ><a href="#" class="social-item">Instagram</a
-              ><a href="#" class="social-item">Linkedin</a>
+              </form>
             </div>
+            <div
+              class="col-12 col-md-3 offset-md-1 mb-5 mb-md-0 address-contact"
+            >
+              <h3 class="mini-title">General Inquiries</h3>
+              <br />
+              <span>MOB:0633749923</span>
+              <br />
+              <span>EMAIL:mo@gmail.com</span>
+              <br />
+              <br />
+              <h3 class="mini-title">Locations</h3>
+              5
+              <span>Ali-Gobinmo,1st-floor, hargeisa-somaliland</span>
+              <br /><br />
+              <h3 class="mini-title">follow</h3>
+              <div class="d-flex flex-column social-contact">
+                <a href="#" class="social-item">Twitter</a
+                ><a href="#" class="social-item">Facebook</a
+                ><a href="#" class="social-item">Instagram</a
+                ><a href="#" class="social-item">Linkedin</a>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <h3 class="mini-title">follow</h3>
+              <div class="d-flex flex-column social-contact">
+                <a href="#" class="social-item">Twitter</a
+                ><a href="#" class="social-item">Facebook</a
+                ><a href="#" class="social-item">Instagram</a
+                ><a href="#" class="social-item">Linkedin</a>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -297,14 +350,14 @@
         </div>
     </section> -->
 
-    <div class="copy-right-area bg-color">
+    <!-- <div class="copy-right-area bg-color">
       <div class="container">
         <p>
           Copyright <i class="ri-copyright-line"></i>2021 Tamkiin. Designed By
           <a href="https://envytheme.com/" target="_blank">TechLine</a>
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class="go-top">
       <i class="ri-arrow-up-s-fill"></i>

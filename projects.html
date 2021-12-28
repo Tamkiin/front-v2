@@ -76,7 +76,7 @@
         </div>
       </div> -->
 
-        <div class="navbar-area navbar-area-style-three">
+        <div class="navbar-area navbar-area-style-three sticky">
             <div class="mobile-responsive-nav">
                 <div class="container">
                     <div class="mobile-responsive-menu">
@@ -110,9 +110,6 @@
                         </style>
             <div class="collapse navbar-collapse mean-menu justify-content-md-between" id="navbarSupportedContent">
               <ul class="navbar-nav d-flex m-md-0" style="margin-left: auto !important; margin-right: 1rem !important;">
-                                <!-- <li class="nav-item">
-                    <a href="#HOME" class="nav-link active"> Home </a>
-                  </li> -->
                                 <li class="nav-item">
                                     <a href="index.html#ABOUT" class="nav-link">About</a>
                                 </li>
@@ -232,19 +229,11 @@
         </div>
     </header>
 
-    <div class="page-title-area">
+    <div class="page-title-area" style="padding-top: 150px;">
         <div class="container">
-            <div class="page-title-content">
+            <!-- <div class="page-title-content">
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="active">Projects</li>
-                </ul>
-            </div>
+            </div> -->
         </div>
         <div class="shape shape-1">
             <img src="assets/images/page-title-shape-1.png" alt="Image">
@@ -252,6 +241,46 @@
         <div class="shape shape-2">
             <img src="assets/images/page-title-shape-2.png" alt="Image">
         </div>
+    <!-- table section -->
+    <section id="PROJECTS" style=" margin-bottom: 5rem;">
+        <div class="container">
+            <div class="row">
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-1">#ID</div>
+                        <div class="col col-2">Project name</div>
+                        <div class="col col-3">Project Type</div>
+                        <div class="col col-4">Status</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42235</div>
+                        <div class="col col-2" data-label="Customer Name">Building</div>
+                        <div class="col col-3" data-label="Amount">Architecture</div>
+                        <div class="col col-4" data-label="Payment Status">Finished</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42442</div>
+                        <div class="col col-2" data-label="Customer Name">Name</div>
+                        <div class="col col-3" data-label="Amount">Logistics</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42257</div>
+                        <div class="col col-2" data-label="Customer Name">John Smith</div>
+                        <div class="col col-3" data-label="Amount">Project</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42311</div>
+                        <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+                        <div class="col col-3" data-label="Amount">$115</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     </div>
 
     <style>
@@ -264,7 +293,7 @@
         }
 
         .responsive-table .table-header {
-            background-color: #95a5a6;
+            background-color: #011b5c;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.03em;
@@ -312,7 +341,7 @@
             }
 
             .responsive-table .col:before {
-                color: #6c7a89;
+                color: #011b5c;
                 padding-right: 10px;
                 content: attr(data-label);
                 flex-basis: 50%;
@@ -320,46 +349,6 @@
             }
         }
     </style>
-    <!-- table section -->
-    <section id="PROJECTS" style="margin-top: 5rem; margin-bottom: 5rem;">
-        <div class="container">
-            <div class="row">
-                <ul class="responsive-table">
-                    <li class="table-header">
-                        <div class="col col-1">#ID</div>
-                        <div class="col col-2">Project name</div>
-                        <div class="col col-3">Project Type</div>
-                        <div class="col col-4">Status</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">42235</div>
-                        <div class="col col-2" data-label="Customer Name">Building</div>
-                        <div class="col col-3" data-label="Amount">Architecture</div>
-                        <div class="col col-4" data-label="Payment Status">Finished</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">42442</div>
-                        <div class="col col-2" data-label="Customer Name">Name</div>
-                        <div class="col col-3" data-label="Amount">Logistics</div>
-                        <div class="col col-4" data-label="Payment Status">Pending</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">42257</div>
-                        <div class="col col-2" data-label="Customer Name">John Smith</div>
-                        <div class="col col-3" data-label="Amount">Project</div>
-                        <div class="col col-4" data-label="Payment Status">Pending</div>
-                    </li>
-                    <li class="table-row">
-                        <div class="col col-1" data-label="Job Id">42311</div>
-                        <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-                        <div class="col col-3" data-label="Amount">$115</div>
-                        <div class="col col-4" data-label="Payment Status">Pending</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
 
     <footer class="footer-area bg-color pt-100 pb-70">
         <div class="container">

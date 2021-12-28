@@ -45,7 +45,29 @@
 
   <header class="header-area header-area-style-three mt-4">
 
+                        <style>
+                          .my-btn {
+                            border-radius: 25px;
+                            padding: 15px 30px !important;
+                            transition: all .5s ;
+                          }
 
+                          .my-btn:hover{ 
+                            background-color: darkorange;
+                            border-radius: 10px;
+                          }
+                            .nav-link:hover {
+                                color: darkorange !important;
+                            }
+                            .nav-link:hover a {
+                                color: darkorange !important;
+                            }
+                            .nav-active{
+                                border-bottom: 2px solid darkorange;
+                                padding-bottom: 5px !important;
+                                color: darkorange !important;
+                            }
+                        </style>
     <div class="navbar-area navbar-area-style-three">
       <div class="mobile-responsive-nav">
         <div class="container">
@@ -70,7 +92,7 @@
                   <a href="index.html#ABOUT" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html#SERVICE" class="nav-link">Services</a>
+                  <a href="index.html#SERVICES" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
                   <a href="index.html#VALUES" class="nav-link">Values</a>
@@ -84,28 +106,9 @@
               </ul>
               <div class="others-options">
                 <div class="col-lg-6 col-md-6">
-
-                  <!-- <ul class="header-left-content d-flex">
-                      <li>
-                        <a href="https://www.facebook.com/" target="_blank">
-                          <i class="ri-facebook-fill"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/" target="_blank">
-                          <i class="ri-instagram-line"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com/" target="_blank">
-                          <i class="ri-twitter-fill"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div> -->
                   <ul>
                     <li>
-                      <a href="contact.html" class="default-btn d-flex align-items-center justify-content-center" style="border-radius: 10px;">
+                      <a href="contact.html" class="default-btn d-flex align-items-center justify-content-center my-btn" style="">
                         <span class="p-0">
                           Contact
                           <!-- <i class="ri-phone-fill"></i> -->
@@ -361,7 +364,7 @@
       cursor: pointer;
     }
   </style>
-<section class="container" id="what-we-do">
+<section class="container" id="SERVICES what-we-do">
   <div class="container-fluid">
     <h2 class="section-title mb-2 h1">What we do</h2>
     <p class="text-center text-muted h5">Having and managing a correct marketing strategy is crucial in a fast moving market.</p>
@@ -500,7 +503,7 @@
     </div>
   </section> -->
 
-  <section class="
+  <section id="VALUES" class="
         logistics-solutions-area
         logistics-solutions-area-style-two
         logistics-solutions-area-style-three

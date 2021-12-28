@@ -1,4 +1,15 @@
-nav to right side
-contact background and form in one container
-remove contact from nav
-fullpage.js
+1-replace old logo
+2-on hover nav links #
+3-nav links scroll to content # 
+4-move partner logos to bottom
+5-contact page background image + make it look like the website #
+6-contact form phone => subject
+7-loader main logo with animation
+8-old services section with less space
+9-hero section slider
+10-fullpage.js
+11-page logo preview
+12-network delay when page loads
+13-services dropdown showing all available services
+14-homepage like the link
+15-services images the links
