@@ -43,7 +43,150 @@
       </div>
     </div>
 
-    <div class="container p-5 custom-container">
+  <header class="header-area header-area-style-three" style="background: #e5eafc;">
+
+                        <style>
+                          .is-sticky {
+                            background: white !important;
+                          }
+                          .my-btn {
+                            border-radius: 25px;
+                            padding: 15px 30px !important;
+                            transition: all .5s ;
+                          }
+
+                          .my-btn:hover{ 
+                            background-color: darkorange;
+                            border-radius: 10px;
+                          }
+                            .nav-link:hover {
+                                color: darkorange !important;
+                            }
+                            .nav-link:hover a {
+                                color: darkorange !important;
+                            }
+                            .nav-active{
+                                border-bottom: 2px solid darkorange;
+                                padding-bottom: 5px !important;
+                                color: darkorange !important;
+                            }
+                        </style>
+    <div class="navbar-area navbar-area-style-three">
+      <div class="mobile-responsive-nav">
+        <div class="container">
+          <div class="mobile-responsive-menu">
+            <div class="logo">
+              <a href="#">
+                <img class="mylogo" src="assets/images/main-logo.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="/index.html">
+              <img class="mylogo" src="assets/images/main-logo.png" alt="logo" />
+            </a>
+            <div class="collapse navbar-collapse mean-menu justify-content-md-between" id="navbarSupportedContent">
+              <ul class="navbar-nav d-flex m-md-0" style="margin-left: auto !important; margin-right: 1rem !important;">
+                <li class="nav-item">
+                  <a href="index.html#ABOUT" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#SERVICES" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#VALUES" class="nav-link">Values</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li> -->
+                <li class="nav-item">
+                  <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+              </ul>
+              <div class="others-options" style="margin-top: -1.6rem;">
+                <div class="col-lg-6 col-md-6">
+                  <ul>
+                    <li>
+                      <a href="contact.html" class="default-btn d-flex align-items-center justify-content-center my-btn" style="">
+                        <span class="p-0">
+                          Contact
+                          <!-- <i class="ri-phone-fill"></i> -->
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+        </div>
+      </div>
+      <div class="others-option-for-responsive">
+        <div class="container">
+          <div class="container">
+            <div class="option-inner">
+              <div class="
+                    others-option
+                    justify-content-center
+                    d-flex
+                    align-items-center
+                  ">
+                <ul>
+                  <li>
+                    <div class="option-item">
+                      <i class="search-btn ri-search-line"></i>
+                      <i class="close-btn ri-close-line"></i>
+                      <div class="search-overlay search-popup">
+                        <div class="search-box">
+                          <form class="search-form">
+                            <input class="search-input" name="search" placeholder="Search" type="text" />
+                            <button class="search-button" type="submit">
+                              <i class="ri-search-line"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6 col-md-6">
+                      <ul class="header-left-content">
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <i class="ri-facebook-fill"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank">
+                            <i class="ri-twitter-fill"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- <a href="tel:+1-(514)-312-5678" class="default-btn">
+                        <span>
+                          +1 (514) 312-5678
+                          <i class="ri-phone-fill"></i>
+                        </span>
+                      </a> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container p-5 pb-4 custom-container">
       <div class="col-lg-12 col-md-12 d-flex" style="flex-direction: row">
         <div class="back-bg">
           <style>
@@ -84,18 +227,24 @@
         justify-content: center;
         /* background-color: #ddd; */
         margin-bottom: 30px;
+        background-image: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),url("./assets/images/cus-bg.jpg");
+        background-size: cover;
+        background-position: center;
       }
       .contact-info-area {
-        /* background-color: rgb(245, 245, 245); */
-        background-color: #e5eafc !important;
-        /* width: 80%; */
         border-radius: 20px;
+        width: 70vw;
+        background-image: linear-gradient(rgba(229,234,252,1),rgba(229,234,252,1));
+        box-shadow: 10px 8px 46px -19px rgba(0,0,0,0.72);
+-webkit-box-shadow: 10px 8px 46px -19px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 8px 46px -19px rgba(0,0,0,0.72);
       }
       .main-header-contact {
         font-size: 45px;
         line-height: 44px;
         font-weight: 700;
         margin-bottom: 50px;
+        margin-left: 6rem;
       }
       .main-header-contact span {
         color: darkorange;
@@ -121,6 +270,7 @@
         margin-top: 25px;
         border-radius: 25px;
         padding: 18px 31px;
+
       }
 
       .my-btn:hover {
@@ -147,22 +297,22 @@
       }
     </style>
     <div class="custom-bg">
-      <div class="contact-info-area pt-100 pb-70">
+      <div class="contact-info-area pb-70 mt-5" style="padding-top: 40px;">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center justify-content-around">
             <a
               href="index.html"
               class="default-btn ctn-btn"
-              style="margin-left: auto; width: 100px; margin-right: 30px"
+              style="margin-left: auto; width: 73px; margin-right: 30px; font-size: 1.2rem; padding: 0; padding: 1rem 0; border-radius: 10px;"
             >
-              <span class="p-0"> Close </span>
+              <span class="p-0"> X </span>
             </a>
             <h1 class="main-header-contact">
               WE’RE HERE FOR <span> YOU </span><br />
               AND <span> WE’RE </span> READY TO<br />
               WORK WITH YOU
             </h1>
-            <div class="col-12 col-md-5 mb-5 mb-md-0">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
               <!-- <h3 class="mini-title">Let's discuss your needs!</h3> -->
               <form id="contactForm">
                 <div class="row">
@@ -236,8 +386,8 @@
                 </div>
               </form>
             </div>
-            <div
-              class="col-12 col-md-3 offset-md-1 mb-5 mb-md-0 address-contact"
+            <div style="margin-top: -2.8rem;"
+              class="col-12 col-md-4 mb-5 mb-md-0 address-contact"
             >
               <h3 class="mini-title">General Inquiries</h3>
               <br />
@@ -271,13 +421,115 @@
         </div>
       </div>
     </div>
-    <!-- 
 
-    <div class="map-area pb-100">
+    <!-- <div class="map-area pb-100">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51502.423422968604!2d-115.24877995231783!3d36.21758989848515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8eaf574293f1b%3A0x8e720e5b03149745!2sLas%20Vegas%2C%20NV%2089108%2C%20USA!5e0!3m2!1sen!2sbd!4v1612342385496!5m2!1sen!2sbd"></iframe>
-    </div>
+    </div> -->
 
+    <footer class="footer-area bg-color pt-100 pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget single-bg">
+              <a href="index.html" class="logo">
+                <img class="mylogo" src="assets/images/logo.png" alt="Image" />
+              </a>
+              <p>
+                Tamkiin ltd, is a service oriented company established two years
+                ago by Somalilanders with a vision to create a first class
+                integrated services structure and other business solutions.
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <h3>Get in touch</h3>
+              <ul class="address">
+                <li>
+                  <span><i class="ri-map-pin-fill"></i> Address:</span>
+                  Ali-Gobinmo building, 1st floor, second road<br />26 hargeisa,
+                  somaliland
+                </li>
+                <li class="location">
+                  <span><i class="ri-phone-fill"></i> Phone:</span>
+                  <a href="tel:+1-(514)-312-5678">+252 (63) 473-6183</a>
+                </li>
+                <li>
+                  <span><i class="ri-mail-fill"></i> Email:</span>
+                  <a href="tel:+1-(514)-312-5678">ceo@tamkin.com</a>
+                  <!-- <a
+                                    href="https://templates.envytheme.com/cdn-cgi/l/email-protection#c4aca1a8a8ab84a9a5b0b6abeaa7aba9"><span
+                                        class="__cf_email__"
+                                        data-cfemail="bbd3ded7d7d4fbd6dacfc9d495d8d4d6">[email&#160;protected]</span></a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <h3>Information</h3>
+              <ul class="import-link">
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Request A Quote</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget newsletter">
+              <h3>Newsletter</h3>
+              <p>
+                Subscribe to our newsletter and receive the latest tips via
+                email.
+              </p>
+              <form class="newsletter-form" data-toggle="validator">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="hello@matro.com"
+                  name="EMAIL"
+                  required
+                  autocomplete="off"
+                />
+                <button class="subscribe" type="submit">
+                  Subscribe
+                  <i class="ri-arrow-right-line"></i>
+                </button>
+                <div id="validator-newsletter" class="form-result"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 
 
     <section class="main-contact-area pb-100">
         <div class="container">

@@ -1795,7 +1795,7 @@ textarea.form-control {
   bottom: 0;
 }
 .banner-area.banner-area-style-two {
-  background-image: url(../images/banner/banner-bg-2.jpg);
+  /* background-image: url(../images/banner/banner-bg-2.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1812,7 +1812,7 @@ textarea.form-control {
 }
 .banner-area.banner-area-style-three {
   background-color: #fff;
-  background-image: url(../images/banner/banner-bg-3.png);
+  background-image: url(../images/bg.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
