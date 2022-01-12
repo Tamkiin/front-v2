@@ -1812,10 +1812,21 @@ textarea.form-control {
 }
 .banner-area.banner-area-style-three {
   background-color: #fff;
-  background-image: url(../images/banner/bg-cover.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: fadeSlider 10s infinite alternate;
+}
+@keyframes fadeSlider {
+  0% {
+    background-image: url(../images/back.png);
+  }
+  50% {
+    background-image: url(../images/banner/bg-cover.png);
+  }
+  100% {
+    background-image: url(../images/back.png);
+  }
 }
 .banner-area.banner-area-style-three .banner-content {
   margin-top: 135px;
