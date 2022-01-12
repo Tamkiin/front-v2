@@ -1,0 +1,4 @@
+1- favicon
+2- emails
+3- hero section 
+4- loader

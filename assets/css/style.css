@@ -4182,11 +4182,14 @@ textarea.form-control {
 .preloader .lds-ripple {
   position: absolute;
   width: 80px;
+  /* background-image: url("../images/main-logo.png"); */
   height: 80px;
-  -webkit-animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
-  animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
   left: 50%;
   top: 50%;
+}
+.preloader img {
+  -webkit-animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
+  animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
   -webkit-transform: translate(-40px, -50px);
   transform: translate(-40px, -50px);
 }
