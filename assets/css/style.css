@@ -4188,10 +4188,14 @@ textarea.form-control {
   top: 50%;
 }
 .preloader img {
-  -webkit-animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
+  /* -webkit-animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
   animation: spin-six 2.5s infinite cubic-bezier(0.17, 0.72, 0.55, 1.66);
   -webkit-transform: translate(-40px, -50px);
-  transform: translate(-40px, -50px);
+  transform: translate(-40px, -50px); */
+  animation-name: loader;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .preloader .preloader-container {
   width: 80px;
@@ -4208,6 +4212,14 @@ textarea.form-control {
   position: relative;
   width: 50px;
   height: 50px;
+}
+@keyframes loader {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 .preloader .pl-spark-1:before,
 .preloader .pl-spark-1:after {
